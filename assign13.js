@@ -24,7 +24,7 @@ let input = [2,3,4,5,3,3,5,2,5,3]
 let out = repeat(input)
 console.log(out);
 
-// Find a = [3,7,8,6,2,5] maximum and minimum number in array
+//2. Find a = [3,7,8,6,2,5] maximum and minimum number in array
 
 let a =  [3,7,8,6,2,5]
 let maxi = a[0]
@@ -46,7 +46,7 @@ for(let i = 0;i<a.length;i++){
 }
 console.log(mini);
 
-//Given an array of objects representing people with their names and ages, use filter to get only the people who are 18 or older, and then use map to create an array of their names
+//3. Given an array of objects representing people with their names and ages, use filter to get only the people who are 18 or older, and then use map to create an array of their names
 
 
 const people = [{ name: "Alice", age: 25 },
@@ -61,13 +61,13 @@ const out = people.filter( people => people.age>=18).map(people => people.name )
 //const out1 = out.map(people => people.name )
 console.log(out);
    
-//Write a function that takes an array of numbers and returns a new array where each element is doubled using the map method  
+//4. Write a function that takes an array of numbers and returns a new array where each element is doubled using the map method  
 
 let arr = [1,2,3,4,5]
 let out = arr.map(el => el*el )
 console.log(out);
 
-Write a program to print numbers 1-10 with a delay of 1 second between each number.
+//5. Write a program to print numbers 1-10 with a delay of 1 second between each number.
 
 function nums() {
     for (let i = 1;i<=10;i++){
@@ -78,7 +78,7 @@ function nums() {
 }
 nums()
 
-// Write a function to check if a given string is a palindrome.
+//6 Write a function to check if a given string is a palindrome.
 
 function  palindrome (st){
     let n = st.length
@@ -116,7 +116,7 @@ palindrome(st)
 // let value = palindrome (st)
 // console.log(value);
 
-//  Write a function to remove duplicate elements from an array without using default functions
+// 7 Write a function to remove duplicate elements from an array without using default functions
 
 function duplicate(arr) {
     let unique = []
@@ -151,7 +151,7 @@ console.log(uni);
  let unique1 = [...new Set(arr1)]
 console.log(unique1);
 
-// Write a function to find the maximum number in an array
+//8 Write a function to find the maximum number in an array
 
 let arr = [2,3,42,5,6]
 let large = []
@@ -165,14 +165,14 @@ for(let i = 0 ;i<n;i++){
 }
 console.log("maximiun",large);
 
-//  Write a function to flatten a nested array
+// 9 Write a function to flatten a nested array
 let mat = [[1,2,3],[4,5,6]]
 console.log(mat.flat());
  mat[[1,2,3],[4,5,[,2,3,6],6]]
 console.log(mat.flat(2));
 console.log(mat.flatMap(el_arr => el_arr.map(el => el*2)));
 
-//Write a function to count repeated characters in a string and print in a string format.
+//10 Write a function to count repeated characters in a string and print in a string format.
 
 function countRepeatedCharacters(str) {
     let charCount = {};  
@@ -199,7 +199,7 @@ let result = countRepeatedCharacters(str);
 
 console.log(result);  
 
-//write pgm to add zero after every values in an array
+//11 write pgm to add zero after every values in an array
 
 let arr = [1,2,3,4,5,6,7,8,9]
 
@@ -211,7 +211,7 @@ for(let i = 0;i<arr.length;i++){
     
 }
 
-//write js pgm to extract numbers b/w two characters in string and add them all(use alpha numeric numberics as input)
+//12write js pgm to extract numbers b/w two characters in string and add them all(use alpha numeric numberics as input)
 
 let str = "ab12c23d"
 console.log(str);
@@ -222,7 +222,7 @@ if (matches) {
    
 }
 
-// Write a program to find the count of the maximum prefix and suffix that are the same in a given string.
+//13  Write a program to find the count of the maximum prefix and suffix that are the same in a given string.
 // function presu(st){
 
 let count = 0
@@ -238,7 +238,7 @@ st = "PGSPGS"
 let out = presu(st)
 console.log(out);
 
-//Write a program to find the missing numbers in an array containing numbers from 1 to 100.
+//14 Write a program to find the missing numbers in an array containing numbers from 1 to 100.
 
 function miss(arr) {
     let misnum = []
@@ -253,7 +253,7 @@ arr = [1,2,3,4,5,6,7,8,9,100]
 let out = miss(arr)
 console.log(out);
 
-//.  Write a program to remove the middle element from an array, or if the middle element is not there, remove every element except the first and last ones
+//15.  Write a program to remove the middle element from an array, or if the middle element is not there, remove every element except the first and last ones
 function mid(arr) {
     let mind = Math.floor(arr.length / 2)
     arr.splice(mind,1)
@@ -263,7 +263,7 @@ arr = [1,2,3,4,5]
 let out = mid(arr);
 console.log(out);
 
-17.  Write a function to calculate the factorial of a number
+//16.  Write a function to calculate the factorial of a number
 function factorial(num) {
     let res = 1
     for(let i = 1;i<=num;i++){
@@ -274,7 +274,7 @@ function factorial(num) {
 num = 3
  console.log(factorial(num));
 
-//. Write a function for input: ["1a1", "2aa3a", 'aabc31", "101", "1001", "a1", "3211", "11c"] and output [101, 1001, 3211]
+//17. Write a function for input: ["1a1", "2aa3a", 'aabc31", "101", "1001", "a1", "3211", "11c"] and output [101, 1001, 3211]
 let arr = ["1a1", "2aa3a", "aabc31", "101", "1001", "a1", "3211" , "11c"]
 let in1 = arr.join(' ');
 
@@ -283,7 +283,7 @@ let n = /^\d+$/
 let out = arr.filter(str => n.test(str))
 console.log(out);
 
-19.  Filter numeric palindromes from the input array
+//18.  Filter numeric palindromes from the input array
 function palnum(st) {
     let n = st.length
     for(let i = 0;i<n;i++){
@@ -299,7 +299,7 @@ let out = palnum(st)
 console.log(out);
 
 
-//20.  Find the length of the longest substring without repeating characters
+//19.  Find the length of the longest substring without repeating characters
 
 function longSubstr(s) {
     const n = s.length;
@@ -323,7 +323,7 @@ function longSubstr(s) {
 const s = "PGSPGS";
  console.log(longSubstr(s));
 
-//.  Reverse the array without using built-in functions
+//20.  Reverse the array without using built-in functions
 
 function rev(arr) {
     let rever = ' '
@@ -336,7 +336,7 @@ function rev(arr) {
  arr = [1,2,3,4,5]
  console.log(rev(arr));
 
-//  Count the occurrences of each unique character in the string
+//21  Count the occurrences of each unique character in the string
 
 function chcount(st) {
     let charCount ={}
@@ -353,7 +353,7 @@ function chcount(st) {
   st = "abvabvcd"
   console.log(chcount(st));
  
-//.  Write a function to find the second maximum and minimum numbers in an array.
+//22.  Write a function to find the second maximum and minimum numbers in an array.
 
 let ar = [2,3,4,5,6,7,8,9]
 
@@ -383,7 +383,7 @@ for(let i =0 ; i<ar.length; i++){
 }
 console.log("minimum",min)
 
-// Write a function to sort an array without using built-in methods
+//23 Write a function to sort an array without using built-in methods
 function sort(arr) {
     let n = arr.length
 
@@ -402,20 +402,20 @@ function sort(arr) {
 arr =[2,1,3,5,4]
 console.log(sort(arr));
 
-//  Write a function to remove duplicate characters in a string
+//24  Write a function to remove duplicate characters in a string
 
 let str = "slskdss"
 let unique = [...new Set(str)]
 console.log(unique);
 
-Write a function to capitalize the first letter of each word in an array of strings
+//25 Write a function to capitalize the first letter of each word in an array of strings
 let a = ["abc","bca"]
  let out = a.map(word => {
     return word.charAt(0).toUpperCase() + word.slice(1)});
 
     console.log(out);
     
- Write a function to calculate the sum of total marks in an array of objects
+ //26  Write a function to calculate the sum of total marks in an array of objects
  function sa(arr){
     let sum = null
     for(let i = 0;i<arr.length;i++){
@@ -428,7 +428,7 @@ let a = ["abc","bca"]
  
 console.log(sa(arr));   
  
-//Write a function to merge two arrays with extra zeros.
+//27  Write a function to merge two arrays with extra zeros.
 
 let arr1 = [0,1,2,3,4]
 let arr2 = [5,6,7,8,0]
@@ -436,7 +436,7 @@ console.log(arr1,arr2);
 
 console.log(arr1.concat(arr2));
 
-Write a function to reverse a string without using built-in methods
+//28 Write a function to reverse a string without using built-in methods
 function reverseString(str) {
     let reversed = "";
     let n = str.length
@@ -448,7 +448,7 @@ function reverseString(str) {
   str = "PGS"
   console.log(reverseString(str));
     
-//Write a deep clone function to create a copy of a nested object or array without any reference to the original
+//29 Write a deep clone function to create a copy of a nested object or array without any reference to the original
 
 let stud = {
         firstname : "p",
@@ -465,10 +465,10 @@ let stud = {
     console.log(stud.fulldetails());
     console.log(stu);
     
-//Write a function to find how many times each element is repeated in an array.
+// 30 Write a function to find how many times each element is repeated in an array.
 
 function countElement(arr) {
-    let num = {};
+     let num = {};
   
     arr.forEach(element => {
       if (num[element]) {
@@ -486,7 +486,7 @@ function countElement(arr) {
   
   console.log(res); 
 
-//Write a function to generate the specified pattern.
+//31  Write a function to generate the specified pattern.
 
 let n = 6
 let string = " "
